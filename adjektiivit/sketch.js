@@ -1,6 +1,3 @@
-
-//tätä yllä muualle
-
 function preload() {
    fontRegular = loadFont("UbuntuMono-Regular.ttf");
 }
@@ -9,6 +6,7 @@ function setup() {
     var cnv = createCanvas(1200, 650);
     background(206, 188,209, 255);
     cnv.position((windowWidth - width) / 2, 0);
+    cnv.parent("app");
     textSize(20);
     textFont(fontRegular);
     frameRate(15);

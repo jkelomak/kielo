@@ -8,22 +8,24 @@ var esittelyteksti = "Tervetuloa Kielo-oppimissivustolle. Tällä sivulla harjoi
 var valittuSl = "sub";
 
 var harjoitusTeksti = function(){
-    
-    text("Valitse substantiivit allaolevasta tekstistä hiiren painalluksella. Kun olet valmis, saat palautetta valintojesi perusteella. Mieti siis huolellisesti vastauksesi, sillä tällöin palautteesi on sinulle hyödyllisempää.", 760, 60, 400, 600);
+    text("Valitse adjektiivit viereisestä tekstistä hiiren painalluksella. Kun olet valmis, saat palautetta valintojesi perusteella. Mieti siis huolellisesti vastauksesi, sillä tällöin palautteesi on sinulle hyödyllisempää.", 760, 60, 400, 600);
 }
 
+var lahdeTeksti = function(){
+    text("(Ote John Steinbeckin romaanista Hyvien ihmisten juhla 1945, \n suom. Jouko Linturi, 1951.)", 30, 400);
+}
 
 var hKentta = new TekstiKentta(30, 20, 670,500);
-hKentta.lisaaKappaleet([5, 12, 20, 40, 51, 63, 88, 96]);
+hKentta.lisaaKappaleet([]);
 
 
 for(var i = 0; i < T_data.sanat.length; i++){
     
-    if(i === 5){
+    if(i === 0){
         hKentta.otsikkoloppui();
     }
     
-    if(i < 5){
+    if(i < 0){
         hKentta.lisaaOtsikkoNappi(T_data.sanat[i], i);
     } else {
         hKentta.lisaaslNappi(T_data.sanat[i], i);

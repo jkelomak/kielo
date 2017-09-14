@@ -58,6 +58,7 @@ function draw() {
 
         var testNappula = new slNappula("LLjjee", 50, 50);
         testNappula.drawsl();
+        lahdeTeksti();
 
     }
     
@@ -90,6 +91,7 @@ function draw() {
         //palautaNappula2.draw();
         palautaNappula3.draw();
         harjoitusTeksti();
+        lahdeTeksti();
     }
     
     //toinen testisivu
@@ -148,6 +150,7 @@ function draw() {
         }
         
         pKentta.kirjoitaPalaute();
+        lahdeTeksti();
     }
     
     //palautekokoruutu
@@ -176,6 +179,7 @@ function draw() {
         }
         sublinkki.draw();
         partisiippilinkki.draw();
+        lahdeTeksti();
         
         palauteTekstiLyhyt();
     }

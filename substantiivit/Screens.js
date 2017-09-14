@@ -12,6 +12,9 @@ var harjoitusTeksti = function(){
     text("Valitse substantiivit allaolevasta tekstistä hiiren painalluksella. Kun olet valmis, saat palautetta valintojesi perusteella. Mieti siis huolellisesti vastauksesi, sillä tällöin palautteesi on sinulle hyödyllisempää.", 760, 60, 400, 600);
 }
 
+var lahdeTeksti = function(){
+    text("(Katkelma tekstistä Tutkijat selvittivät, kuinka kutitus tarttuu (HS.fi 9.3.2017, Johanna Junttila))", 30, 480, 700, 700);
+}
 
 var hKentta = new TekstiKentta(30, 20, 670,500);
 hKentta.lisaaKappaleet([5, 12, 20, 40, 51, 63, 88, 96]);

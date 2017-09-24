@@ -1,6 +1,3 @@
-
-//tätä yllä muualle
-
 function preload() {
    fontRegular = loadFont("UbuntuMono-Regular.ttf");
 }
@@ -9,6 +6,7 @@ function setup() {
     var cnv = createCanvas(1200, 650);
     background(206, 188,209, 255);
     cnv.position((windowWidth - width) / 2, 0);
+    cnv.parent("app");
     textSize(20);
     textFont(fontRegular);
     frameRate(15);
@@ -41,13 +39,13 @@ function draw() {
     //harjoitussivu
     if(currScreen === 1){
         for(var i=0; i < hKentta.napit.length; i++){
-            if(i < 5){
+            if(i < 3){
                 textSize(30);
                 merkkiH = 21+4;
                 merkkiW = 15;
 
             }
-            if(i === 5){
+            if(i === 3){
                 textSize(20);
                 merkkiH = 14 + 4;
                 merkkiW = 10;
@@ -55,12 +53,12 @@ function draw() {
             hKentta.napit[i].drawsl();
         }
 
+        lahdeTeksti();
         //testipalautaNappula.draw();
         //palautaNappula.draw();
         //palautaNappula2.draw();
         palautaNappula3.draw();
         harjoitusTeksti();
-        lahdeTeksti();
     }
 
     //palaute+harjoitussivu
@@ -72,7 +70,7 @@ function draw() {
                 merkkiW = 15;
 
             }
-            if(i === 5){
+            if(i === 3){
                 textSize(20);
                 merkkiH = 14 + 4;
                 merkkiW = 10;
@@ -81,7 +79,6 @@ function draw() {
         }
 
         pKentta.kirjoitaPalaute();
-        lahdeTeksti();
     }
 
     //palautekokoruutu
@@ -95,13 +92,13 @@ function draw() {
     //palautealla
     if(currScreen === 4){
         for(var i=0; i < hKentta.napit.length; i++){
-            if(i < 5){
+            if(i < 3){
                 textSize(30);
                 merkkiH = 21+4;
                 merkkiW = 15;
 
             }
-            if(i === 5){
+            if(i === 3){
                 textSize(20);
                 merkkiH = 14 + 4;
                 merkkiW = 10;
@@ -111,16 +108,15 @@ function draw() {
         sublinkki.draw();
         partisiippilinkki.draw();
         lahdeTeksti();
-
         palauteTekstiLyhyt();
     }
 
 }
 
 function mouseClicked() {
+    //console.log("painuu");
     if(currScreen === 0){
         if(aloitaNappula.isInside(mouseX, mouseY)){
-            console.log("jsesejje");
             currScreen = 1;
         }
 

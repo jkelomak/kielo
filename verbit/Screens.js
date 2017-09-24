@@ -49,8 +49,7 @@ var pKentta2 = new TekstiKentta(30, 60, 1000, 700);
 
 //palaute alla -sivu
 
-var sublinkki = new Nappula("substantiivitietoa", 760, 500);
-var partisiippilinkki = new Nappula("partisiippitietoa", 760, 550);
+var sublinkki = new Nappula("verbitietoa", 760, 500);
 var palauteTekstiLyhyt = function(){
     text("Sinulla on vielä tekemistä. Lue palaute harjoituksen alapuolelta. Tämän ruudun alaosasta löydät linkit sinulle hyödylliseen materiaaliin", 760, 60, 400, 600);
 }

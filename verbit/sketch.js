@@ -106,7 +106,6 @@ function draw() {
             hKentta.napit[i].drawsl();
         }
         sublinkki.draw();
-        partisiippilinkki.draw();
         lahdeTeksti();
         palauteTekstiLyhyt();
     }
@@ -157,10 +156,7 @@ function mouseClicked() {
 
     if(currScreen === 4){
         if(sublinkki.isInside(mouseX, mouseY)){
-            window.open("https://fi.wikipedia.org/wiki/Substantiivi");
-        }
-        if(partisiippilinkki.isInside(mouseX, mouseY)){
-            window.open("https://fi.wikipedia.org/wiki/Partisiippi");
+            window.open("https://fi.wikipedia.org/wiki/Verbi");
         }
     }
 

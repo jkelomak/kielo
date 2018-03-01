@@ -13,7 +13,7 @@ var Isarake = function(){
     } else if (a>1) {
         return "et kovin usein erehdy luulemaan muiden sanaluokkien sanoja verbeiksi tunnistamisessa";
     } else {
-        return "et ole napsutellut sanoja sattumanvaraisesti";
+        return "olet ehkä napsutellut sanoja sattumanvaraisesti";
     }
 }
 
@@ -24,11 +24,11 @@ var Bsarake = function(){
     if(a < 7){
         return "tunnistat verbin persoonamuodot varmasti";
     } else if(a < 11){
-        return "tunnistat osan verbin persoonamuodoista, mutta selviytyäksesi kolmannen luokan opetuksesta, tarvitset lisäharjoitusta";
+        return "tunnistat osan verbin persoonamuodoista."
     } else if(a < 17){
-        return "tunnistat joskus verbin persoonamuodon, mutta osaamisesi ei riitä kolmannen luokan sisältöihin";
+        return "tunnistat joskus verbin persoonamuodon";
     } else{
-        return "sinulla on vaikeuksia tunnistaa verbin persoonamuotoa. Tarvitset vahvan kertauksen voidaksesi opettaa kielentuntemusta kolmannelta luokalta ylöspäin.";
+        return "sinulla on vaikeuksia tunnistaa verbin persoonamuotoa.";
     }
 }
 
@@ -43,7 +43,7 @@ var Csarake = function(){
     } else if(a < 10){
         return "sinulla on ehkä jonkinlainen käsitys siitä, että verbeillä on erilaisia muotoja. Tarvitset erityisesti verbin aika- ja liittomuotojen kertausta. Niitä aletaan harjoitella jo 4. luokalla";
     } else{
-        return "verbikäsityksesi on rajoittunut, sillä et taida tunnistaa verbin liittomuotoja. Tarvitset ehdottomasti lisäosaamista verbeistä voidaksesi opettaa alaluokilla äidinkieltä ja kirjallisuutta.";
+        return "verbikäsityksesi on rajoittunut, sillä et taida tunnistaa verbin liittomuotoja. Tarvitset lisäosaamista verbeistä voidaksesi opettaa alaluokilla äidinkieltä ja kirjallisuutta.";
     }
 }
 
@@ -92,7 +92,7 @@ palautteet.push(Fsarake);
 var Gsarake = function(){
     var a = T_data_vaarMaara("minen");
     if(a < 2){
-        return "pidät myös tekemistä nimeäviä substantiiveja verbeinä. Tämä käsitys pitää muuttaa.";
+        return "pidät myös tekemistä nimeäviä substantiiveja verbeinä.";
     } else if(a < 4){
         return "hapuilet tekemistä kuvaavien substantiivien kohdalla";
     } else {
